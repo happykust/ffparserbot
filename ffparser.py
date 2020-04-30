@@ -339,7 +339,7 @@ def vkbot():
                         check(int(comm), event.object['message']['peer_id'])
                     elif response == "/register()":
                         register("regaway",event.object['message']['peer_id'])
-                elif event.object['message']['action']['type'] == 'chat_invite_user':
+                if event.object['message']['action']['type'] == 'chat_invite_user':
                     vk.messages.send(
                         random_id=get_random_id(),
                         message='&#128075; Приветствую!\n&#128520; Вы на закрытом бета тестировании бота по сливу ответов FoxFord\n\nБот активно разрабатывается, поэтому просим нормально относиться к неполным ответам или ошибкам\n\n&#128377; Доступные команды для Вас:\n\n/парсинг <номер теста>\n\n&#128215; "Ворует" ответы на любое тестирование имеющее вид trainings/<номер>\n\n/register()\n\n	&#9888; Экстренная команда на случай возникновения множества ошибок. Испольнять могут только алминистраторы беседы\n\n&#8252; Во время выполнения команд бот НЕ отвечает на Ваши сообщения\n\n',
