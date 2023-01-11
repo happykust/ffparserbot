@@ -17,8 +17,8 @@ import time, pickle
 import colorama
 from colorama import Fore, Back
 
-vk_session = vk_api.VkApi(token='0e9cb40ec710cb86355bfc6f7ccc8cd4b43415bafb8417d1d2f6524179bb499ac534625116d101f40a793')
-longpoll = VkBotLongPoll(vk_session, 194807625 )
+vk_session = vk_api.VkApi(token='Here your vk\'s token')
+longpoll = VkBotLongPoll(vk_session, 00000000)
 vk = vk_session.get_api()
 
 colorama.init()
